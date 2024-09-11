@@ -25,5 +25,9 @@ yarn verify
 #### Testing
 
 ```bash
+npx hardhat node
+```
+
+```bash
 yarn test
 ```

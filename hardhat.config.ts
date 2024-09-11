@@ -29,19 +29,12 @@ export default {
 		target: 'ethers-v5',
 	},
 	networks: {
-		hardhat: {
-			forking: {
-				url: process.env.ETHMAIN_NET_API_URL,
-			},
-			hardfork: 'london',
-			gasPrice: 'auto',
-		},
 		localhost: {
 			url: `http://127.0.0.1:8545`,
 		},
 		sepolia: {
 			url: process.env.ETHTEST_NET_API_URL,
-			accounts: [process.env.PRIVATE_KEY],
+			accounts: [process.env.PRIVATE_KEY, process.env.PRIVATE_KEY_ALICE],
 			saveDeployments: true,
 		},
 		mainnet: {

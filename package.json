@@ -10,7 +10,7 @@
     "deploy": "hardhat run ./scripts/deploy.ts --network sepolia",
     "update": "hardhat run ./scripts/upgrade.ts --network sepolia",
     "verify": "hardhat run ./scripts/verify.ts --network sepolia",
-    "test": "hardhat test --network sepolia"
+    "test": "hardhat test --network localhost"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.2.3",
